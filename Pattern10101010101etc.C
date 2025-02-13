@@ -2,30 +2,17 @@
 #include <stdio.h>
 
 int main() {
-    int r=5,c=5,temp;
-    int a=1,b=0;
+    
+    int a=1;
     
     
-    for(int i=0;i<r/2+1;i++){
-        for(int j=0;j<c;j++){
-            if(j%2==0){
-                printf("%d\t",a);
-            }
-            else{
-                printf("%d\t",b);
-            }
-         }
-            printf("\n");
-        for(int k=0;k<c;k++){
-             if(k%2==0){
-                printf("%d\t",b);
-            }
-            else{
-                printf("%d\t",a);
-            }
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            printf("%d\t",a%2);
+            a++;
         }
         printf("\n");
-   }
+    }
     
     return 0;
 }
